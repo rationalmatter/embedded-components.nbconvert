@@ -260,17 +260,17 @@ setup_args['entry_points'] = {
         'jupyter-nbconvert = nbconvert.nbconvertapp:main',
     ],
     "nbconvert.exporters" : [
-        'custom=nbconvert.exporters:TemplateExporter',
+        # 'custom=nbconvert.exporters:TemplateExporter',
         'html=nbconvert.exporters:HTMLExporter',
         'slides=nbconvert.exporters:SlidesExporter',
-        'latex=nbconvert.exporters:LatexExporter',
-        'pdf=nbconvert.exporters:PDFExporter',
-        'webpdf=nbconvert.exporters:WebPDFExporter',
+        # 'latex=nbconvert.exporters:LatexExporter',
+        # 'pdf=nbconvert.exporters:PDFExporter',
+        # 'webpdf=nbconvert.exporters:WebPDFExporter',
         'markdown=nbconvert.exporters:MarkdownExporter',
         'python=nbconvert.exporters:PythonExporter',
-        'rst=nbconvert.exporters:RSTExporter',
+        # 'rst=nbconvert.exporters:RSTExporter',
         'notebook=nbconvert.exporters:NotebookExporter',
-        'asciidoc=nbconvert.exporters:ASCIIDocExporter',
+        # 'asciidoc=nbconvert.exporters:ASCIIDocExporter',
         'script=nbconvert.exporters:ScriptExporter']
 }
 
