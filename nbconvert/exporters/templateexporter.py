@@ -237,7 +237,9 @@ class TemplateExporter(Exporter):
 
     @default('extra_template_basedirs')
     def _default_extra_template_basedirs(self):
-        return [os.getcwd()]
+        # return [os.getcwd()]
+        # We don't expect any templates in cwd in our embedded runtime, and we may not always have necessary permissions to access cwd
+        return []
 
     #Extension that the template files use.
     template_extension = Unicode().tag(config=True, affects_environment=True)
