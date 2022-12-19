@@ -60,4 +60,4 @@ def create_valid_version(release_info, epoch=None, pre_input='', dev_input=''):
         raise ValueError(pep440_err)
 
 
-__version__ = create_valid_version(version_info, pre_input=pre_info, dev_input=dev_info)
+__version__ = create_valid_version(version_info, pre_input=pre_info, dev_input=dev_info) + '+juno'
